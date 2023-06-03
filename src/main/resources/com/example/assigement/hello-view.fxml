@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="btnAddItems" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="555.0" prefWidth="731.0" style="-fx-background-color: #222233;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assigement.HelloController">
+   <children>
+      <Label fx:id="lbllistviewOne" layoutX="70.0" layoutY="105.0" text="ListView One" textFill="#fff9f9">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblListviewTwo" layoutX="480.0" layoutY="114.0" text="ListView Two" textFill="#fffefe">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </Label>
+      <ListView fx:id="listView1" layoutX="52.0" layoutY="174.0" prefHeight="214.0" prefWidth="200.0" />
+      <ListView fx:id="lisView2" layoutX="460.0" layoutY="177.0" prefHeight="214.0" prefWidth="200.0" />
+      <Label fx:id="lblTitlte" layoutX="33.0" layoutY="14.0" text="Assigement Copying Listview Items into other Listview" textFill="#fff6f6">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCopyOneItem" layoutX="321.0" layoutY="189.0" mnemonicParsing="false" onAction="#handleRemoveButtonAction" prefHeight="25.0" prefWidth="66.0" text="&gt;" />
+      <Button fx:id="bntCopyItems" layoutX="321.0" layoutY="246.0" mnemonicParsing="false" onAction="#handleRemoveAllItems" prefHeight="25.0" prefWidth="66.0" text="&gt;&gt;" />
+      <Button fx:id="btnCopyone" layoutX="321.0" layoutY="310.0" mnemonicParsing="false" onAction="#handleBackOriganalListView" prefHeight="25.0" prefWidth="66.0" text="&lt;" />
+      <Button fx:id="btnCopyTwo" layoutX="321.0" layoutY="366.0" mnemonicParsing="false" onAction="#handleRemoveAllItems2" prefHeight="25.0" prefWidth="66.0" text="&lt;&lt;" />
+      <Button fx:id="btnClear" layoutX="562.0" layoutY="417.0" mnemonicParsing="false" onAction="#clearItems" prefHeight="34.0" prefWidth="105.0" style="-fx-background-color: red;" text="Clear Items" textFill="#f7f8ff">
+         <effect>
+            <Bloom />
+         </effect>
+      </Button>
+      <Label fx:id="lblCounter1" layoutX="94.0" layoutY="423.0" prefHeight="32.0" prefWidth="105.0" textFill="#f4f4f4">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCounter2" layoutX="383.0" layoutY="435.0" prefHeight="31.0" prefWidth="118.0" textFill="#fdf7f7">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtFiled" layoutX="244.0" layoutY="68.0" prefHeight="46.0" prefWidth="219.0" promptText="Add Items">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnAdditems" layoutX="297.0" layoutY="125.0" mnemonicParsing="false" onAction="#handleReadButtonAction" prefHeight="46.0" prefWidth="125.0" text="Add item">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Label fx:id="dateTimeLabel" layoutX="41.0" layoutY="481.0" prefHeight="53.0" prefWidth="404.0" textFill="#fffcfc">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
